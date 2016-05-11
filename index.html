@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+		<link rel="stylesheet" href="styles/style.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="container centered">
+			<div class="clock">
+				<div class="clock-cmpt alarm" id="alarm">
+					<img src="images/alarm_on.png">
+				</div>
+				<div class="clock-cmpt clock-face">
+					<div id="pause-time-display">00:00</div>
+					<div id="time-display">00 : 00</div>
+					<div id="play-pause">
+						<img src="images/play.png"></img>
+					</div>
+					<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+			     	width="400px" height="400px">
+			     		<defs>
+							<linearGradient id="gradient">
+								<stop stop-color="#336393" offset="0"/>
+								<stop stop-color="#003C78" offset="1"/>
+							</linearGradient>
+						 </defs>
+				     	<path id="circle-path" stroke="url(#gradient)"
+				            d="
+				            M 170, 170
+				            m 0, -150
+				            a 150,150 0 1,1 0,300
+				            a 150,150 0 1,1 0,-300"/>
+				        <path id="inner-circle"
+				            d="
+				            M 140, 140
+				            m 30, -90
+				            a 120,120 0 1,1 0,240
+				            a 120,120 0 1,1 0,-240"/>
+					</svg>
+				</div>
+			</div>
+			<div class="control">
+				<div class="control-cmpt label jp">
+					Aseta jakson pituus
+				</div>
+				<div class="control-cmpt jp-slider-component">
+					<div class="min" id="jp-slider-min"></div>
+					<div id="jp-slider">
+					</div>
+					<div class="max" id="jp-slider-max"></div>
+				</div>
+				<div class="control-cmpt label tp">
+					Aseta tauon pituus
+				</div>
+				<div class="control-cmpt tp-slider-component">
+					<div class="min" id="tp-slider-min"></div>
+					<div id="tp-slider">
+					</div>
+					<div class="max" id="tp-slider-max"></div>
+				</div>
+				
+				<div class="control-cmpt task-tab1">
+					<div class="tg-one task"></div>
+					<div class="tg-one task"></div>
+					<div class="tg-one task"></div>
+					<div class="tg-one task"></div>
+					<div class="tg-one task"></div>
+					<div class="tg-one task"></div>
+					<div class="tg-one task"></div>
+					<div class="tg-one task"></div>
+				</div>
+				<div class="control-cmpt task-tab2">
+					<div class="tg-two task"></div>
+					<div class="tg-two task"></div>
+					<div class="tg-two task"></div>
+					<div class="tg-two task"></div>
+					<div class="tg-two task"></div>
+					<div class="tg-two task"></div>
+					<div class="tg-two task"></div>
+					<div class="tg-two task"></div>
+				</div>
+				<div class="task-picker-panel">
+					<div  id="dec"><img src="images/dec-arrow.png"</img></div>
+					<div id="sel-task">0</div>
+					<div  id="inc"><img src="images/inc-arrow.png"</img></div>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js">
+		</script>
+		<script src="scripts/script.js"></script>
+	</body>
+</html>
