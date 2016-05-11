@@ -133,15 +133,17 @@ function displayTime(t, type){
 function taskInterval(){
 	if(tTimeLeft > 0){
 		tTimeLeft--;
+		if(tTimeLeft == 0){
+			if(alarmSet){
+				audioElement.play();
+			}
+			resetClock();
+			doneTasks++;
+			$("#sel-task").text(toDoTasks-1);
+			setTaskStatus(doneTasks, 2)
+		}
 		displayTime(tTimeLeft, 0);
 	}else{
-		if(alarmSet){
-			audioElement.play();
-		}
-		resetClock();
-		doneTasks++;
-		$("#sel-task").text(toDoTasks-1);
-		setTaskStatus(doneTasks, 2)
 		if(toDoTasks > 1){
 			intervalType = 1;
 			toDoTasks--;
