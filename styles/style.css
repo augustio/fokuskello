@@ -42,6 +42,7 @@ body{
 .label{
 	height:27px;
 	text-align: center;
+	letter-spacing: 3px;
 	padding-top: 3px;
 	color: #FFFFFF;
 	border-radius: 5px;
