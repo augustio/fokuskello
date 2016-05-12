@@ -85,7 +85,8 @@ $(document).ready(function(){
 				}else{
 					pI = setInterval("pauseInterval()", 1000);
 				}
-				$("#play-pause img").attr("src", "images/pause.png");
+				$("#pause").show();
+				$("#play").hide();
 			}else{
 				timerOn = false;
 				resetClock();
@@ -94,7 +95,8 @@ $(document).ready(function(){
 				}else{
 					clearInterval(pI);
 				}
-				$("#play-pause img").attr("src", "images/play.png");
+				$("#pause").hide();
+				$("#play").show();
 			}
 		}	
 	});
@@ -102,10 +104,12 @@ $(document).ready(function(){
 	$("#alarm").on('click', function(){
 		if(alarmSet){
 			alarmSet = false;
-			$("#alarm img").attr("src", "images/alarm_off.png");
+			$("#sound").hide();
+			$("#mute").show();
 		}else{
 			alarmSet = true;
-			$("#alarm img").attr("src", "images/alarm_on.png");
+			$("#mute").hide();
+			$("#sound").show();
 		}
 	});
 });
@@ -157,7 +161,8 @@ function taskInterval(){
 			taskStarted = false;
 			timerOn = false;
 			displayTime(tTime, 0);
-			$("#play-pause img").attr("src", "images/play.png");
+			$("#pause").hide();
+			$("#play").show();
 		}
 	}
 }
