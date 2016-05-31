@@ -151,11 +151,8 @@ body{
 	height: 40px;
 }
 div#dec:active{
-	margin-left:3px;
-	margin-right:2px;
 }
 div#inc:active{
-	margin-left:4px;
 }
 
 .clock-cmpt{
