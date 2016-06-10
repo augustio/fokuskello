@@ -52,6 +52,8 @@ $("#tp-slider").slider({
 });
 
 $(document).ready(function(){
+	$("#pause").hide();
+	$("#mute").hide();
 	$("#dec").on('click', function(){
 		var num = Number($("#sel-task").text());
 		if(selectedTasks > doneTasks && !taskStarted){
