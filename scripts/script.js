@@ -81,14 +81,14 @@ $(document).ready(function(){
 					taskStarted = true;
 					tTimeLeft = tTime;
 				}
+				$("#pause").show();
+				$("#play").hide();
 				if(intervalType == 0){
 					rotateClock(tTimeLeft);
 					tI = setInterval("taskInterval()",1000);
 				}else{
 					pI = setInterval("pauseInterval()", 1000);
 				}
-				$("#pause").show();
-				$("#play").hide();
 			}else{
 				timerOn = false;
 				resetClock();
@@ -184,19 +184,19 @@ function pauseInterval(){
 }
 
 function rotateClock(t){
-	var path = document.querySelector('#rotatingClock');
+	var path = document.querySelector('#rotating-clock');
 	path.style.transition = path.style.WebkitTransition =
 	  'none';
 	path.style.transition = path.style.WebkitTransition =
 	  'background-color ' + (t) + 's linear';
-	path.style.backgroundColor = transparent;
+	path.style.backgroundColor = 'transparent';
 }
 
 function resetClock(){
-	var path = document.querySelector('#rotatingClock');
+	var path = document.querySelector('#rotating-clock');
 	path.style.transition = path.style.WebkitTransition =
 	  'none';
-	path.style.background-color = 'blue';
+	path.style.backgroundColor = 'blue';
 }
 
 function setTaskStatus(num, status){
