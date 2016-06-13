@@ -14,33 +14,16 @@
 					<img id="sound" src="images/sound.png">
 				</div>
 				<div class="clock-cmpt clock-face">
-					<div id="pause-time-display">00:00</div>
-					<div id="time-display">00 : 00</div>
-					<div id="play-pause">
-						<img id="pause" src="images/pause.png"></img>
-						<img id="play" src="images/play.png"></img>
+					<div class="circle" id="rotating-clock">
+						<div class="inner-circle">
+							<div id="pause-time-display">00:00</div>
+							<div id="time-display">00 : 00</div>
+							<div id="play-pause">
+								<img id="pause" src="images/pause.png"></img>
+								<img id="play" src="images/play.png"></img>
+							</div>
+						</div>
 					</div>
-					<svg xmlns="http://www.w3.org/2000/svg" version="1.1"
-			     	width="400px" height="400px">
-			     		<defs>
-							<linearGradient id="gradient">
-								<stop stop-color="#336393" offset="0"/>
-								<stop stop-color="#003C78" offset="1"/>
-							</linearGradient>
-						 </defs>
-				     	<path id="circle-path" stroke="url(#gradient)"
-				            d="
-				            M 170, 170
-				            m 0, -150
-				            a 150,150 0 1,1 0,300
-				            a 150,150 0 1,1 0,-300"/>
-				        <path id="inner-circle"
-				            d="
-				            M 150, 150
-				            m 20, -110
-				            a 130,130 0 1,1 0,260
-				            a 130,130 0 1,1 0,-260"/>
-					</svg>
 				</div>
 			</div>
 			<div class="control">

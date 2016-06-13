@@ -184,24 +184,19 @@ function pauseInterval(){
 }
 
 function rotateClock(t){
-	var path = document.querySelector('#circle-path');
-	var length = path.getTotalLength();
+	var path = document.querySelector('#rotatingClock');
 	path.style.transition = path.style.WebkitTransition =
 	  'none';
-	path.style.strokeDasharray = length + ' ' + length;
-	path.style.strokeDashoffset = '0';
 	path.style.transition = path.style.WebkitTransition =
-	  'stroke-dashoffset ' + (t) + 's linear';
-	path.style.strokeDashoffset = length;
+	  'background-color ' + (t) + 's linear';
+	path.style.backgroundColor = transparent;
 }
 
 function resetClock(){
-	var path = document.querySelector('#circle-path');
-	var length = path.getTotalLength();
+	var path = document.querySelector('#rotatingClock');
 	path.style.transition = path.style.WebkitTransition =
 	  'none';
-	path.style.strokeDasharray = length + ' ' + length;
-	path.style.strokeDashoffset = '0';
+	path.style.background-color = 'blue';
 }
 
 function setTaskStatus(num, status){
