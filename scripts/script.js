@@ -196,7 +196,7 @@ function resetClock(){
 	var path = document.querySelector('#rotating-clock');
 	path.style.transition = path.style.WebkitTransition =
 	  'none';
-	path.style.backgroundColor = 'blue';
+	path.style.backgroundColor = '#003C78';
 }
 
 function setTaskStatus(num, status){
