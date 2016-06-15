@@ -185,20 +185,21 @@ div#inc:active{
 
 .inner-circle {
 	position: absolute;
-	margin:18px;
+	margin:13px;
 	border: solid 2px #336393;
 	border-radius: 50%;
-	width: 260px;
-	height: 260px;
+	width: 270px;
+	height: 270px;
 	background-color: #FFFFFF; 
 }
 
 #time-display{
 	position:absolute;
-	top:106px;
-	left:45px;
+	top:115px;
+	left:35px;
 	height:40px;
 	width:200px;
+	text-align:center;
 	font-family:sans-serif;
 	font-weight: lighter;
 	font-size:48px;
@@ -206,9 +207,10 @@ div#inc:active{
 #pause-time-display{
 	position:absolute;
 	top:40px;
-	left:85px;
+	left:35px;
 	height:40px;
 	width:200px;
+	text-align:center;
 	font-family:sans-serif;
 	font-weight: lighter;
 	font-size:32px;
@@ -216,8 +218,8 @@ div#inc:active{
 }
 #play-pause img{
 	position:absolute;
-	top:180px;
-	left:100px;
+	top:200px;
+	left:105px;
 	height:60px;
 	width:60px;
 }
