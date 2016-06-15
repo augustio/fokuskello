@@ -55,6 +55,9 @@ body{
 .tp{
 	top:120px;
 }
+.jm{
+	top:220px;
+}
 .jp-slider-component{
 	top:80px;
 	height:40px;
@@ -102,12 +105,12 @@ body{
 .ui-slider .ui-slider-handle:focus { outline: none; }
 
 .task-tab1{
-	top:240px;
+	top:265px;
 	height:20px;
 	padding-left:8px;
 }
 .task-tab2{
-	top:275px;
+	top:295px;
 	height:20px;
 	padding-left:8px;
 }
@@ -126,7 +129,7 @@ body{
 	width:122px;
 	height:35px;
 	left:130px;
-	top:320px;
+	top:340px;
 }
 #sel-task{
 	float:left;
