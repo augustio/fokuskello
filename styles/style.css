@@ -179,27 +179,39 @@ div#inc:active{
 	transform:translate(-50%, -50%);
 }
 
-.circle{
+#rotating-clock{
+	position:absolute;
 	width: 300px;
 	height: 300px;
 	border-radius: 50%;
 	background-color: #003C78;
 }
 
-.inner-circle {
+.mid-circle {
 	position: absolute;
-	margin:13px;
-	border: solid 2px #336393;
+	margin:15px;
 	border-radius: 50%;
 	width: 270px;
 	height: 270px;
-	background-color: #FFFFFF; 
+	background-color: #FFFFFF;
+	z-index: 2;
+}
+
+.inner-circle {
+	position: absolute;
+	margin: 14px;
+	border: solid 1px #7F7F7F;
+	border-radius: 50%;
+	width: 240px;
+	height: 240px;
+	background-color: #FFFFFF;
+	z-index: 3;
 }
 
 #time-display{
 	position:absolute;
-	top:115px;
-	left:35px;
+	top:90px;
+	left:20px;
 	height:40px;
 	width:200px;
 	text-align:center;
@@ -209,8 +221,8 @@ div#inc:active{
 }
 #pause-time-display{
 	position:absolute;
-	top:40px;
-	left:35px;
+	top:20px;
+	left:20px;
 	height:40px;
 	width:200px;
 	text-align:center;
@@ -221,8 +233,8 @@ div#inc:active{
 }
 #play-pause img{
 	position:absolute;
-	top:200px;
-	left:105px;
+	top:170px;
+	left:90px;
 	height:60px;
 	width:60px;
 }
