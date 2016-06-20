@@ -196,7 +196,12 @@ body{
 	width: 350px;
 	height: 350px;
 	border-radius: 50%;
-	background-color: #003C78;
+}
+
+.gradient{
+	background-image: -moz-radial-gradient(75px 90px, circle farthest-corner, #FFFFFF 30%, #003C78 80%);
+	background-image: -webkit-radial-gradient(75px 90px, circle farthest-corner, #FFFFFF 30%, #003C78 80%);
+	background-image: radial-gradient(75px 90px, circle farthest-corner, #FFFFFF 30%, #003C78 80%);
 }
 
 .mid-circle {

@@ -190,19 +190,11 @@ function pauseInterval(){
 }
 
 function rotateClock(t){
-	var path = document.querySelector('#rotating-clock');
-	path.style.transition = path.style.WebkitTransition =
-	  'none';
-	path.style.transition = path.style.WebkitTransition =
-	  'background-color ' + (t) + 's linear';
-	path.style.backgroundColor = 'transparent';
+	$('#rotating-clock').removeClass('gradient');
 }
 
 function resetClock(){
-	var path = document.querySelector('#rotating-clock');
-	path.style.transition = path.style.WebkitTransition =
-	  'none';
-	path.style.backgroundColor = '#003C78';
+	$('#rotating-clock').addClass('gradient');
 }
 
 function setTaskStatus(num, status){
