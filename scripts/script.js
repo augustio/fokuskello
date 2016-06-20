@@ -116,6 +116,10 @@ $(document).ready(function(){
 			$("#sound").show();
 		}
 	});
+
+	$("#reset").on('click', function(){
+		document.location.reload(true);
+	});
 });
 
 function displayTime(t, type){
