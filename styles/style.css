@@ -1,14 +1,14 @@
 body{
 	margin:0;
 	padding:0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 20px;
 	font-weight: bold; 
 	font-size:100%;
 }
 .container {
-    height: 500px;
-    width: 760px;
+    height: 600px;
+    width: 800px;
 } 
 .centered {
   position: fixed;
@@ -19,8 +19,8 @@ body{
 .clock {
     position: absolute;
     left: 0;
-    width: 380px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
     border: 2px solid #003C78;
     border-right:none;
 }
@@ -29,55 +29,57 @@ body{
 .control {
     position: absolute;
     right: 0;
-    width: 380px;
-    height: 400px;
+    width: 400px;
+    height: 500px;
     border: 2px solid #003C78;
     border-left:none;
 }
 .control-cmpt{
 	position:absolute;
-	width:300px;
-	left:40px;
+	width:350px;
+	top:50px;
+	left:15px;
 }
 .label{
-	height:27px;
+	height:24px;
+	width: 295px;
+	margin-left:10px;
+	padding-top:2px;
 	text-align: center;
 	letter-spacing: 3px;
-	padding-top: 3px;
 	color: #FFFFFF;
 	border-radius: 5px;
 	background:#B4BE00; 
   	box-shadow: 2px 2px rgba(0, 0, 0, 0.5); 
 }
 .jp{
-	top:20px;
+	margin-top:45px;
 }
 .tp{
-	top:120px;
+	margin-top:140px;
 }
 .jm{
-	top:220px;
+	margin-top:235px;
 }
 .jp-slider-component{
-	top:80px;
 	height:40px;
+	margin-top:98px;
 }
 .tp-slider-component{
-	top:180px;
 	height:40px;
+	margin-top:193px;
 }
 .min{
 	float:left;
 	width:20px;
-	margin-left:10px;
-	margin-right:15px;
-	margin-top: -.4em
+	margin-left:35px;
+	margin-top: -.5em
 }
 .max{
 	float:left;
 	width:20px;
-	margin-left:20px;
-	margin-top: -.4em
+	margin-left:10px;
+	margin-top: -.5em
 }
 #jp-slider{
 	float:left;
@@ -91,10 +93,10 @@ body{
 .ui-slider{height: 2px;}
 .ui-widget-content { background: #7F7F7F; }
 .ui-slider-horizontal .ui-slider-handle{
-	height:25px;
-	width:25px;
-	border-radius:12px;
-	top: -.7em;
+	height:20px;
+	width:20px;
+	border-radius:50%;
+	top: -.5em;
 }
 .ui-state-default,
 .ui-widget-content .ui-state-default,
@@ -105,63 +107,55 @@ body{
 .ui-slider .ui-slider-handle:focus { outline: none; }
 
 .task-tab1{
-	top:265px;
 	height:20px;
-	padding-left:8px;
+	margin-top:275px;
 }
 .task-tab2{
-	top:295px;
 	height:20px;
-	padding-left:8px;
+	margin-top:305px;
 }
-.tg-one{}
 .task{
 	float:left;
-	margin:5px;
-	width: 25px;
-	height: 25px;
+	margin:10px;
+	width: 20px;
+	height: 20px;
 	background-color:#7F7F7F;
-	border-radius: 12px;
+	border-radius: 50%;
 }
-.tg-two{}
 .task-picker-panel{
 	position:absolute;
-	width:122px;
+	width:88px;
 	height:35px;
-	left:130px;
-	top:340px;
+	margin-top:350px;
+	margin-left:115px;
 }
 #sel-task{
 	float:left;
 	width:30px;
-	margin-top:.5em;
+	margin-top:.2em;
 	text-align:center;
 }
 #dec img{
 	float:left;
 	margin-left:5px;
-	width:40px;
-	height: 40px;
+	width:25px;
+	height: 25px;
 }
 #inc img{
 	float:left;
 	margin-left:2px;
-	width:40px;
-	height: 40px;
-}
-div#dec:active{
-}
-div#inc:active{
+	width:25px;
+	height: 25px;;
 }
 
 .clock-cmpt{
 	position:absolute;
-	width:400px;
-	left:20px;
+	width:350px;
+	top: 30px;
+	left:45px;
 }
 .clock-face{
-	top:50px;
-	left:50px;
+	margin-top:50px;
 }
 .alarm img{
 	position:absolute;
@@ -181,8 +175,8 @@ div#inc:active{
 
 #rotating-clock{
 	position:absolute;
-	width: 300px;
-	height: 300px;
+	width: 350px;
+	height: 350px;
 	border-radius: 50%;
 	background-color: #003C78;
 }
@@ -191,50 +185,64 @@ div#inc:active{
 	position: absolute;
 	margin:15px;
 	border-radius: 50%;
-	width: 270px;
-	height: 270px;
+	width: 320px;
+	height: 320px;
 	background-color: #FFFFFF;
 	z-index: 2;
 }
 
 .inner-circle {
 	position: absolute;
-	margin: 14px;
+	margin: 9px;
 	border: solid 1px #7F7F7F;
 	border-radius: 50%;
-	width: 240px;
-	height: 240px;
+	width: 300px;
+	height: 300px;
 	background-color: #FFFFFF;
 	z-index: 3;
 }
 
 #time-display{
 	position:absolute;
-	top:90px;
-	left:20px;
+	top:130px;
+	left:5px;
 	height:40px;
-	width:200px;
+	width:300px;
+	letter-spacing:10px;
 	text-align:center;
-	font-family:sans-serif;
-	font-weight: lighter;
 	font-size:48px;
+	font-weight:lighter;
 }
 #pause-time-display{
 	position:absolute;
-	top:20px;
-	left:20px;
+	top:70px;
+	left:5px;
 	height:40px;
-	width:200px;
+	width:300px;
+	letter-spacing:10px;
 	text-align:center;
-	font-family:sans-serif;
-	font-weight: lighter;
-	font-size:32px;
-	opacity:0.5;
+	font-size:40px;
+	font-weight:lighter;
+	opacity:0.3;
 }
-#play-pause img{
+#play-pause{
 	position:absolute;
-	top:170px;
-	left:90px;
-	height:60px;
-	width:60px;
+	top:210px;
+	left:116px;
+	height:64px;
+	width:64px;
+	border: solid 1px #7F7F7F ;
+	border-radius: 50%;
+}
+#play{
+	margin-left:12px;
+	margin-top:7px;
+	height:50px;
+	width:50px;
+}
+#pause{
+	margin-left:7px;
+	margin-top:7px;
+	height:50px;
+	width:50px;
 }
