@@ -1,5 +1,5 @@
-var jpMin = 0, jpMax = 60;
-var tpMin = 0, tpMax = 30;
+var jpMin = 1, jpMax = 60;
+var tpMin = 1, tpMax = 30;
 var defTTime = 25; //Default task duration in minutes
 var defPTime = 5; //Default pause duration in minutes
 var tTime = defTTime * 60; //Time to complete a single task
@@ -32,6 +32,7 @@ $("#num-sel-task").text(0);
 
 $("#jp-slider").slider({
 	max: jpMax,
+	min: jpMin,
 	value:defTTime,
 	slide: function(event, ui){
 		if(!taskStarted){
@@ -42,6 +43,7 @@ $("#jp-slider").slider({
 });
 $("#tp-slider").slider({
 	max: tpMax,
+	min: tpMin,
 	value:defPTime,
 	slide: function(event, ui){
 		if(!taskStarted){
