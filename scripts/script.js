@@ -54,8 +54,6 @@ $("#tp-slider").slider({
 });
 
 $(document).ready(function(){
-	$("#pause").hide();
-	$("#mute").hide();
 	$("#dec").on('click', function(){
 		var num = Number($("#sel-task").text());
 		if(selectedTasks > doneTasks && !taskStarted){
@@ -83,8 +81,8 @@ $(document).ready(function(){
 					taskStarted = true;
 					tTimeLeft = tTime;
 				}
-				$("#pause").show();
-				$("#play").hide();
+				$("#pause").css("visibility", "visible");
+				$("#play").css("visibility", "hidden");
 				if(intervalType == 0){
 					rotateClock(tTimeLeft);
 					tI = setInterval("taskInterval()",1000);
@@ -99,8 +97,8 @@ $(document).ready(function(){
 				}else{
 					clearInterval(pI);
 				}
-				$("#pause").hide();
-				$("#play").show();
+				$("#pause").css("visibility", "hidden");
+				$("#play").css("visibility", "visible");
 			}
 		}	
 	});
@@ -108,12 +106,12 @@ $(document).ready(function(){
 	$("#alarm").on('click', function(){
 		if(alarmSet){
 			alarmSet = false;
-			$("#sound").hide();
-			$("#mute").show();
+			$("#sound").css("visibility", "hidden");
+			$("#mute").css("visibility", "visible");
 		}else{
 			alarmSet = true;
-			$("#mute").hide();
-			$("#sound").show();
+			$("#sound").css("visibility", "visible");
+			$("#mute").css("visibility", "hidden");
 		}
 	});
 

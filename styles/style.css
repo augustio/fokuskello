@@ -258,14 +258,20 @@ body{
 	border-radius: 50%;
 }
 #play{
+	position:absolute;
 	margin-left:12px;
 	margin-top:7px;
 	height:50px;
 	width:50px;
 }
 #pause{
+	position:absolute;
 	margin-left:7px;
 	margin-top:7px;
 	height:50px;
 	width:50px;
+	visibility:hidden;
+}
+#mute{
+	visibility:hidden;
 }
