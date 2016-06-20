@@ -167,8 +167,8 @@ function taskInterval(){
 			taskStarted = false;
 			timerOn = false;
 			displayTime(tTime, 0);
-			$("#pause").hide();
-			$("#play").show();
+			$("#pause").css("visibility", "hidden");
+			$("#play").css("visibility", "visible");
 		}
 	}
 }
