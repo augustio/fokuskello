@@ -8,7 +8,7 @@ body{
 }
 .container {
     height: 600px;
-    width: 800px;
+    width: 840px;
 } 
 .centered {
   position: fixed;
@@ -19,7 +19,7 @@ body{
 .clock {
     position: absolute;
     left: 0;
-    width: 400px;
+    width: 420px;
     height: 500px;
     border: 2px solid #003C78;
     border-right:none;
@@ -29,16 +29,16 @@ body{
 .control {
     position: absolute;
     right: 0;
-    width: 400px;
+    width: 420px;
     height: 500px;
     border: 2px solid #003C78;
     border-left:none;
 }
 .control-cmpt{
 	position:absolute;
-	width:350px;
+	width:400px;
 	top:40px;
-	left:15px;
+	left:30px;
 }
 .label{
 	height:24px;
@@ -168,9 +168,9 @@ body{
 
 .clock-cmpt{
 	position:absolute;
-	width:350px;
+	width:400px;
 	top: 25px;
-	left:45px;
+	left:65px;
 }
 .clock-face{
 	margin-top:40px;
