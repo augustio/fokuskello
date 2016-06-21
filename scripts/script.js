@@ -18,10 +18,7 @@ var taskStarted = false;
 var timerOn = false;
 var alarmSet = true;
 var intervalType = 0; //Set taskInterval = 0, set pause Interval = 1
-var alarmSoundFilePath = "audio/alarm_sound.wav";
-var audioElement = document.createElement('audio');
-	
-audioElement.setAttribute('src', alarmSoundFilePath);
+
 displayTime(tTime, 0);
 displayTime(pTime, 1);
 $("#jp-slider-max").text(jpMax);
@@ -145,7 +142,7 @@ function taskInterval(){
 		tTimeLeft--;
 		if(tTimeLeft == 0){
 			if(alarmSet){
-				audioElement.play();
+				$('#play-alarm').trigger('play');
 			}
 			resetClock();
 			doneTasks++;
