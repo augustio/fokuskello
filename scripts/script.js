@@ -189,10 +189,12 @@ function pauseInterval(){
 
 function rotateClock(t){
 	$('#rotating-clock').removeClass('gradient');
+	$('#rc-bg').removeClass('gradient1');
 }
 
 function resetClock(){
 	$('#rotating-clock').addClass('gradient');
+	$('#rc-bg').addClass('gradient1');
 }
 
 function setTaskStatus(num, status){

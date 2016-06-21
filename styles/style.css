@@ -198,10 +198,24 @@ body{
 	border-radius: 50%;
 }
 
+#rc-bg{
+	position:absolute;
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+	clip: rect(0px, 175px, 350px, 0px);
+}
+
 .gradient{
-	background-image: -moz-radial-gradient(75px 90px, circle farthest-corner, #FFFFFF 30%, #003C78 80%);
-	background-image: -webkit-radial-gradient(75px 90px, circle farthest-corner, #FFFFFF 30%, #003C78 80%);
-	background-image: radial-gradient(75px 90px, circle farthest-corner, #FFFFFF 30%, #003C78 80%);
+	background-image: -moz-linear-gradient(to right, #FFFFFF 50%, #003C78 50%);
+	background-image: -webkit-linear-gradient(to right, #FFFFFF 50%, #003C78 50%);
+	background-image: linear-gradient(to right, #FFFFFF 50%, #003C78 50%);
+}
+
+.gradient1{
+	background-image: -moz-linear-gradient(to bottom, #FFFFFF 40%, #003C78 60%);
+	background-image: -webkit-linear-gradient(to bottom, #FFFFFF 40%, #003C78 60%);
+	background-image: linear-gradient(to bottom, #FFFFFF 40%, #003C78 60%);
 }
 
 .mid-circle {
@@ -248,28 +262,14 @@ body{
 	font-weight:lighter;
 	opacity:0.3;
 }
-#play-pause{
+#play-pause img{
 	position:absolute;
 	top:210px;
-	left:116px;
+	left:118px;
 	height:64px;
 	width:64px;
-	border: solid 1px #7F7F7F ;
-	border-radius: 50%;
-}
-#play{
-	position:absolute;
-	margin-left:12px;
-	margin-top:7px;
-	height:50px;
-	width:50px;
 }
 #pause{
-	position:absolute;
-	margin-left:7px;
-	margin-top:7px;
-	height:50px;
-	width:50px;
 	visibility:hidden;
 }
 #mute{
