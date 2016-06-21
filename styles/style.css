@@ -203,7 +203,7 @@ body{
 	width: 350px;
 	height: 350px;
 	border-radius: 50%;
-	clip: rect(0px, 175px, 350px, 0px);
+	clip: rect(0px, 176px, 350px, 0px);
 }
 
 .gradient{
