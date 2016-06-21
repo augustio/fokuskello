@@ -37,7 +37,7 @@ body{
 .control-cmpt{
 	position:absolute;
 	width:400px;
-	top:40px;
+	top:34px;
 	left:30px;
 }
 .label{
@@ -169,11 +169,11 @@ body{
 .clock-cmpt{
 	position:absolute;
 	width:400px;
-	top: 25px;
+	top: 28px;
 	left:65px;
 }
 .clock-face{
-	margin-top:40px;
+	margin-top:42px;
 }
 .alarm img{
 	position:absolute;
