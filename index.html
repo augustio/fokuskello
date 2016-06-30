@@ -8,8 +8,8 @@
 	</head>
 	<body>
 		<div class="container centered">
-			<div class="clock">
-				<div class="clock-cmpt alarm" id="alarm">
+			<div class="left">
+				<div id="alarm">
 					<img id="mute" src="images/mute.png">
 					<img id="sound" src="images/sound.png">
 				</div>
@@ -18,8 +18,8 @@
 				 	<source src="audio/alarm_sound.wav" type="audio/wav">
 				 	<source src="audio/alarm_sound.mp3" type="audio/mpeg">
 				</audio> 
-				<div class="clock-cmpt clock-face">
-					<div class="gradient" id="rotating-clock">
+				<div class="clock">
+					<div class="gradient" id="circle">
 						<div class="mid-circle">
 							<div class="inner-circle">
 								<div id="pause-time-display">00:00</div>
@@ -31,32 +31,32 @@
 							</div>
 						</div>
 					</div>
-					<div class="gradient1" id="rc-bg"></div>
+					<div class="gradient1" id="left-arc"></div>
 				</div>
 			</div>
-			<div class="control">
-				<div class="control-cmpt label jp">
+			<div class="right">
+				<div class="label jp">
 					Aseta jakson pituus
 				</div>
-				<div class="control-cmpt jp-slider-component">
+				<div class="jp-slider-component">
 					<div class="min" id="jp-slider-min"></div>
 					<div id="jp-slider">
 					</div>
 					<div class="max" id="jp-slider-max"></div>
 				</div>
-				<div class="control-cmpt label tp">
+				<div class="label tp">
 					Aseta tauon pituus
 				</div>
-				<div class="control-cmpt tp-slider-component">
+				<div class="tp-slider-component">
 					<div class="min" id="tp-slider-min"></div>
 					<div id="tp-slider">
 					</div>
 					<div class="max" id="tp-slider-max"></div>
 				</div>
-				<div class="control-cmpt label jm">
+				<div class="label jm">
 					Jaksojen määrä
 				</div>
-				<div class="control-cmpt task-tab1">
+				<div class="task-tab1">
 					<div class="tg-one task"></div>
 					<div class="tg-one task"></div>
 					<div class="tg-one task"></div>
@@ -66,7 +66,7 @@
 					<div class="tg-one task"></div>
 					<div class="tg-one task"></div>
 				</div>
-				<div class="control-cmpt task-tab2">
+				<div class="task-tab2">
 					<div class="tg-two task"></div>
 					<div class="tg-two task"></div>
 					<div class="tg-two task"></div>
@@ -76,12 +76,12 @@
 					<div class="tg-two task"></div>
 					<div class="tg-two task"></div>
 				</div>
-				<div class=" control-cmpt task-picker-panel">
+				<div class="task-picker-panel">
 					<div  id="dec"><img src="images/arrow-dec.png"</img></div>
 					<div id="sel-task">0</div>
 					<div  id="inc"><img src="images/arrow-inc.png"</img></div>
 				</div>
-				<div class="control-cmpt" id="reset">Nollaa kaikki</div>
+				<div id="reset">Nollaa kaikki</div>
 			</div>
 		</div>
 		<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
