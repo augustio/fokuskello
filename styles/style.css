@@ -200,11 +200,13 @@ body{
 .gradient{
 	background-image: -moz-linear-gradient(to right, #FFFFFF 50%, #003C78 50%);
 	background-image: -webkit-linear-gradient(to right, #FFFFFF 50%, #003C78 50%);
+	background-image: -o-linear-gradient(to right, #FFFFFF 50%, #003C78 50%);
 	background-image: linear-gradient(to right, #FFFFFF 50%, #003C78 50%);
 }
 .gradient1{
 	background-image: -moz-linear-gradient(to bottom, #FFFFFF 65%, #003C78 90%);
 	background-image: -webkit-linear-gradient(to bottom, #FFFFFF 65%, #003C78 90%);
+	background-image: -o-linear-gradient(to right, #FFFFFF 50%, #003C78 50%);
 	background-image: linear-gradient(to bottom, #FFFFFF 65%, #003C78 90%);
 }
 .mid-circle {
