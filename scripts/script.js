@@ -226,10 +226,12 @@ function setTaskStatus(num, status){
 
 function resetApp(){
 	jpMin = tpMin = 1;
-	jpMax = tpMax = 30;
+	jpMax = 60;
+	tpMax = 30;
 	defTTime = 25;
 	defPTime = 5; 
-    tTime = pTime = defTTime * 60; 
+    tTime = defTTime * 60;
+    pTime = defPTime * 60; 
     tTimeLeft = pTimeLeft = toDoTasks = 0; 
     numTGOne = numTGTwo = 8; 
     doneTasks = selectedTasks = 0 
