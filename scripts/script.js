@@ -111,10 +111,11 @@ $(document).ready(function(){
 			$("#mute").css("visibility", "hidden");
 		}
 	});
-
+	
 	$("#reset").on('click', function(){
-		document.location.reload(true);
+		resetApp();
 	});
+	
 });
 
 function displayTime(t, type){
@@ -221,4 +222,53 @@ function setTaskStatus(num, status){
 			}
 			break;
 	}
+}
+
+function resetApp(){
+	jpMin = tpMin = 1;
+	jpMax = tpMax = 30;
+	defTTime = 25;
+	defPTime = 5; 
+    tTime = pTime = defTTime * 60; 
+    tTimeLeft = pTimeLeft = toDoTasks = 0; 
+    numTGOne = numTGTwo = 8; 
+    doneTasks = selectedTasks = 0 
+    maxNumTasks = numTGOne + numTGTwo; 
+    clearInterval(tI);
+    clearInterval(pI);
+    taskStarted = timerOn = false;
+    alarmSet = true;
+    intervalType = 0; 
+
+	displayTime(tTime, 0);
+	displayTime(pTime, 1);
+
+	$("#pause").css("visibility", "hidden");
+	$("#play").css("visibility", "visible");
+	$("#sound").css("visibility", "visible");
+	$("#mute").css("visibility", "hidden");
+
+	$("#jp-slider-max").text(jpMax);
+	$("#tp-slider-max").text(tpMax);
+	$("#jp-slider-min").text(jpMin);
+	$("#tp-slider-min").text(tpMin);
+	$("#num-sel-task").text(0);
+	$("#sel-task").text(toDoTasks);
+
+	for(i = 0; i < 16; i++){
+		setTaskStatus(i+1, 0);
+	}
+	
+	resetClock();
+
+	$("#jp-slider").slider({
+		max: jpMax,
+		min: jpMin,
+		value:defTTime,
+	});
+	$("#tp-slider").slider({
+		max: tpMax,
+		min: tpMin,
+		value:defPTime,
+	});
 }
