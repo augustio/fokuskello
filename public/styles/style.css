@@ -5,18 +5,10 @@ body{
 	font-size:100%;
 }
 .container {
+    position: fixed;
     height: 385px;
     width: 570px;
 } 
-.centered {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-}
 .left {
     position: absolute;
     float:left;
