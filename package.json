@@ -1,0 +1,22 @@
+{
+  "name": "focus-kello",
+  "version": "1.0.0",
+  "description": "A simple web application for work task organisation and time management.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/augustio/focus-kello.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/augustio/focus-kello/issues"
+  },
+  "homepage": "https://gitlab.com/augustio/focus-kello#README",
+  "dependencies": {
+    "express": ""
+  }
+}
