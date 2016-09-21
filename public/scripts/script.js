@@ -176,6 +176,9 @@ function pauseInterval(){
 		pTimeLeft--;
 		displayTime(pTimeLeft, 1);
 	}else{
+		if(alarmSet){
+			$('#play-pause-end').trigger('play');
+		}
 		intervalType = 0;
 		clearInterval(pI);
 		tTimeLeft = tTime;
