@@ -81,7 +81,7 @@ $(document).ready(function(){
 				$("#pause").css("visibility", "visible");
 				$("#play").css("visibility", "hidden");
 				if(intervalType == 0){
-					rotateClock(tTimeLeft);
+					playTimerStartEffect();
 					tI = setInterval("taskInterval()",1000);
 				}else{
 					pI = setInterval("pauseInterval()", 1000);
@@ -183,12 +183,12 @@ function pauseInterval(){
 		clearInterval(pI);
 		tTimeLeft = tTime;
 		displayTime(--tTimeLeft, 0);
-		rotateClock(tTimeLeft);
+		playTimerStartEffect();
 		tI = setInterval("taskInterval()", 1000);
 	}
 }
 
-function rotateClock(t){
+function playTimerStartEffect(){
 	$('#circle').removeClass('gradient');
 	$('#left-arc').removeClass('gradient1');
 }
